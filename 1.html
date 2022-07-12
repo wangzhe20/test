@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一个html文件</title>
+    <script src="./jquery-3.4.1.js"></script>
+    <script>
+        $(function(){
+            console.log($('ul > p ~ a'));
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <p>1</p>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <a href="#">1</a>
+        </ul>
+    </div>
+</body>
+</html>
